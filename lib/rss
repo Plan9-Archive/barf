@@ -1,0 +1,48 @@
+fn display_rss{
+	echo '<rss version="2.0">
+	<channel>
+	<title>'$"tags '|' $"siteTitle'</title>
+	<link>'$base_url^$barf_base_uri'</link>
+	<description>'$base_url^$barf_base_uri'</description>
+	<lastBuildDate>'
+	date
+	echo '</lastBuildDate>
+	<language>en</language>
+	<image>
+	<url>'$base_url^$barf_base_uri'</url>
+	<title>'$"siteTitle'</title>
+	<link>'$base_url^$barf_base_uri'</link>
+	</image>'
+	get_post_list
+	for(i in `{seq 1 $#posts}){
+		a_id=$posts($i)
+		a_dir=$barf_root/$"barf_dir/src/$a_id
+		echo '<item>
+		<guid>'$base_url^$barf_base_uri'?id='$"a_id'</guid>
+		<pubDate>'
+		cat $a_dir/date
+		echo '</pubDate>
+		<title>'
+		cat $a_dir/title
+		echo '</title>
+		<link>'$base_url^$barf_base_uri'?id='$"a_id'</link>
+		<description>
+		<![CDATA['
+		if(! ~ $#a_link 0)
+			link=$"a_link
+		if not
+			link=$base_url^$barf_base_uri'?id='$"a_id
+		echo 'source: <a href="'$"link'">link</a>&nbsp;&nbsp;
+		tags:&nbsp;'
+		print_tags
+		echo '<br><br>'
+		cat $a_dir/body
+		echo '<br>
+		]]>
+		</description>
+		<category>'$"tags'</category>
+		</item>'
+	}
+	echo '</channel>
+	</rss>'
+}

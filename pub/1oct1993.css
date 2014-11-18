@@ -1,0 +1,280 @@
+/* 1oct1993.com */
+
+body {
+	font-family : Helvetica, Arial, Sans-Serif;
+	font-style : normal;
+	padding: 2px 2em;
+	line-height: 1.5em;
+	font-size: 70%;
+	/*
+	background-image: url('http://1oct1993.com/img/background.png');
+	background-repeat: repeat
+	*/
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/* font styles */
+a { text-decoration: none; color: #FFFFFF; }
+a:hover { background: #00ADEF; color: #000000;}
+li:hover { color: #FFFFFF; }
+li a { color: #FFFFFF }
+li a:hover { background: #00ADEF; color: #000000; }
+ul { list-style: none; padding-left: 0px; margin: 0px }
+p {
+	font-size : 100%; 
+	font-style : normal; 
+	padding: 0px;
+} 
+h2 { font-size : 140%; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h2, h3, h1, h4 {
+	font-family: Helvetica, Arial, Sans-Serif;
+	text-transform: uppercase;
+	color : #FFFFFF; 
+	margin: 0px 0px;
+	padding: 2px 0px;
+	clear: both;
+}
+/* end font styles */
+
+hr { border: 1px solid #fff; } 
+
+blockquote, code {
+	background : #eee;
+	padding: 6px;
+	border-left: 3px solid #eee;
+}
+
+code { ont-family: Courier, 'Lucida Console','Courier New', Sans-Serif; }
+
+pre {
+	margin-left: 2em; 
+	font-size: 1.2em;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+table {
+	background-color: transparent;
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+}
+
+td {
+	background-color: transparent;
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+}
+
+textarea { height: 300px; }
+
+tr {
+	background-color: transparent;
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+}
+
+#book_image {
+	float: top;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 750px;
+	width: 500px;
+}
+
+#book_index {
+	float: top;
+	position: relative;
+	top: 25px;
+	left: 550px;
+	right: 25px;
+	height: 700px;
+	width: 450px;
+	font-size: 16px;
+}
+
+#book_menu { font size: 16px; }
+
+#bottom { 
+	float: bottom;
+	position: absolute;
+	bottom: 10px;
+}
+
+#center {
+	position: absolute;
+	left: 1%;
+	width: 65%;
+	top: 850px;
+}
+
+#edit {
+	width: 750px;
+	font-size: 10pt;
+}
+
+#footer { font-size: 8pt; }
+
+/*forms*/
+input , textarea, select, option {
+	font-family: Helvetica, Arial, Sans-Serif; 
+	font-size:100%;
+	padding: 2px;
+	background : #eee;
+	color : #000000; 
+	border: 1px solid #000000;
+	margin: 2px;
+}
+fieldset, legend {
+	background:transparent;
+	color : #00ADEF; 
+	border: none;
+	padding: 5px;
+}
+label, legend { font-weight:normal; }
+
+#header {
+	float: top;
+	position: absolute;
+	top: 24px;
+	left: 17%;
+	height: 100%;
+}
+
+#left {
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	width: 15%;
+	height: 100%;
+	list-style: none;
+	overflow: auto;
+}
+
+#list {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 130px;
+	width: 90%;
+	height: 100%;
+}
+
+#meta { font-size: 8pt; }
+
+#page_frames {
+	width: 100%;
+	float: left;
+	/* for ie */
+	margin: 0; 
+	overflow: auto;
+	/* end for ie */
+}
+
+#page_list {
+	text-align: right;
+	font-size: 8pt;
+}
+
+#post {
+	position: relative;
+	left: 23%;
+	width: 76%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#post_body {
+	position: relative;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;;
+	font-size: 12pt;
+}
+
+#post_date { font-size: 8pt; }
+
+#post_meta {
+	margin-left: 2px;
+	color: #00ADEF;
+	font-size: 8pt;
+}
+
+#post_tags { font-size: 8pt; }
+
+#post_thumb {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ 
+#post_title {
+	border: 1px;
+	line-height: 1.5em;
+}
+#post_title a { color: #FFFFFF; }
+#post_title a:hover { color: #000000; }
+#post_title h2 { font-weight: 100; }
+
+#right {
+	float: right;
+	position: absolute;
+	top: 50px;
+	right: 1%;
+	width: 33%;
+	height: 100%;
+	list-style: none;
+}
+
+#search {
+	position: relative;
+	top: 75px;
+	right: 10%;
+	font-size: 10pt;
+}
+
+/* sidebar */
+#sidebar {
+	position: relative;
+	z-index: 100;
+	width: 90%;
+	top: 850px;
+	right: 10px;
+	left: 10px;
+	margin: 2px;
+}
+#sidebar h2 {
+	margin: 5px 0px 0px;
+	padding: 4px 0px;
+	font-size:100%;
+}
+#sidebar ul { margin: 2px; }
+
+#searchform label { font-weight:bold; }
+#searchform input { width: 20%; }
+#searchform input.submit {
+	width: 15%;
+	text-transform: uppercase;
+	color: #000000;
+	background: #00ADEF;
+}
+
+#top {
+	float: top;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+	width: 100%
+	overflow: auto;
+}

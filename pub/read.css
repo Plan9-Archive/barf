@@ -1,0 +1,282 @@
+/* read.stanleylieber.com */
+
+body {
+	font-family :'Lucida Sans Unicode','Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif;
+	font-style : normal;
+	padding: 2px 2em;
+	line-height: 1.5em;
+	font-size: 70%;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/* font styles */
+a { text-decoration: none; color: #FFFFFF; }
+a:hover { background: #FFFFFF; color: #000000; }
+li:hover { color: #FFFFFF }
+li a { color: #FFFFFF }
+li a:hover { background: #FFFFFF; color: #000000; }
+ul { list-style: none; padding-left: 0px; margin: 0px }
+p {
+	font-size : 100%; 
+	font-style : normal; 
+	padding: 0px;
+} 
+h2 { font-size : 140%; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h2, h3, h1, h4 {
+	font-family: Georgia,'Trebuchet MS', 'Lucida Sans',  'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif;
+	color : #FFFFFF; 
+	margin: 0px 0px;
+	padding: 2px 0px;
+	clear: both;
+}
+/* end font styles */
+
+hr { border: 1px solid #FFFFFF; } 
+
+blockquote, code {
+	background : #eee;
+	padding: 6px;
+	border-left: 3px solid #eee;
+}
+
+code, pre { font-family: Courier, 'Lucida Console','Courier New', Sans-Serif; }
+
+td {
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #FFFFFF;
+	background: black;
+}
+
+textarea {
+	height: 300px;
+	background-color: #EEEEEE;
+}
+
+tr {
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #FFFFFF;
+}
+
+#add {
+	position: absolute;
+	top: 75px;
+	left: 10%;
+	font-size: 10pt;
+}
+
+#bottom { 
+	float: bottom;
+	position: absolute;
+	bottom: 10px;
+}
+
+#center {
+	position: absolute;
+	top: 155px;
+	left: 1%;
+	width: 65%;
+	height: 100%;
+}
+
+#edit {
+	width: 750px;
+	font-size: 10pt;
+}
+
+/* forms */
+input , textarea, select, option {
+	font-family :'Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+	font-size:100%;
+	padding: 2px;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	background: gray;
+	margin: 2px;
+}
+fieldset, legend {
+	background:transparent;
+	color : #FFFFFF; 
+	border: none;
+	padding: 5px;
+}
+label, legend {
+	font-weight:normal;
+}
+/* end forms */
+
+#header {
+	float: top;
+	position: absolute;
+	top: 24px;
+	left: 17%;
+	height: 100%;
+}
+
+#left {
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	width: 15%;
+	height: 100%;
+	list-style: none;
+	overflow: auto;
+}
+
+#list {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 130px;
+	width: 90%;
+	height: 100%;
+}
+
+#meta { font-size: 8pt; }
+
+#page_list {
+	text-align: right;
+	font-size: 9pt;
+	padding: 20px;
+}
+
+#post {
+	position: relative;
+	left: 23%;
+	width: 76%;
+	padding-bottom: 100px;
+	color: #FFFFFF;
+	background: #000000;
+}
+
+#post_body {
+	position: relative;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+}
+
+#post_date {
+	font-size: 8pt;
+	color: #FFFFFF;
+}
+
+#post_edit {
+	width: 100px;
+	text-align: center;
+}
+
+#post_meta {
+	margin-left: 2px;
+	font-size: 8pt;
+	color: gray;
+}
+
+#post_table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#post_tags { font-size: 8pt; }
+
+#post_thumb {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#post_title {
+	border: 1px;
+	font-size : 140%;
+	font-weight: bold;
+}
+#post_title a { color: #FFFFFF; }
+#post_title a:hover {
+	background: #FFFFFF;
+	color: #000000;
+}
+#post_title h2 { font-weight: 100; }
+
+#right {
+	float: right;
+	position: absolute;
+	top: 150px;
+	right: 1%;
+	width: 33%;
+	height: 100%;
+	list-style: none;
+}
+
+#sidebar {
+	position: relative;
+	z-index: 100;
+	width: 90%;
+	top: 10px;
+	right: 10px;
+	left: 10px;
+	margin: 2px;
+}
+#sidebar h2 {
+	margin: 5px 0px 0px;
+	padding: 4px 0px;
+	font-size:100%;
+}
+#sidebar ul { margin: 2px; }
+
+#searchform label { font-weight:bold; }
+#searchform input {
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	background: gray;
+}
+#searchform input#s {
+	width: 40%;
+	border-top: solid 1px gray;
+	border-bottom: solid 1px gray;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	background: #000000;
+	color: #FFFFFF;
+}
+#searchform input.submit {
+	width: 16%;
+	border-top: solid 1px gray;
+	border-bottom: solid 1px gray;
+	border-left: solid 1px gray;
+	border-right: solid 1px gray;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+#search {
+	position: absolute;
+	top: 75px;
+	right: 10%;
+	font-size: 10pt;
+}
+
+#top {
+	float: top;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+	width: 100%
+	overflow: auto;
+}

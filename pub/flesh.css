@@ -1,0 +1,387 @@
+/* flesh.stanleylieber.com */
+body {
+	font-family: sans-serif;
+	font-size: 9pt;
+	background: #EFC5A4;
+	color: #000000;
+}
+
+a { text-decoration: none; color: #000000; }
+a:hover { background: #000000; color: #FF7FA8;}
+h1,h2 { background: #000000; color: #FF7FA8; margin: 0px; }
+h1 { font-size: 150% }
+h1 a { color: #FF7FA8 }
+h2 { font-size: 100%; margin-top: 1em }
+ul { list-style: none; padding-left: 0px; margin: 0px }
+li { color: FDFF00; margin: 0px }
+li:hover { background: #000000; color: #FF7FA8 }
+li a { color: #FF7FA8; display: block; width: 100%; }
+li a:hover { background: #000000; color: #FF7FA8; }
+
+hr { border: 1px solid #fff; } 
+
+code, pre { font-family: Courier, 'Lucida Console','Courier New', Sans-Serif; }
+blockquote, code {
+	background : #eee;
+	padding: 6px;
+	border-left: 3px solid #eee;
+}
+
+table {
+	background-color: transparent;
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+	background: #EFC5A4;
+}
+
+td {
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+	background: #EFC5A4;
+}
+
+textarea {
+	height: 300px;
+	background-color: #EEEEEE;
+}
+
+tr {
+	padding: 0px;
+	border: 0px;
+	border-collapse: collapse;
+}
+
+#add {
+	position: absolute;
+	top: 75px;
+	left: 10%;
+	font-size: 10pt;
+}
+
+#big {
+	position: relative;
+	top: 50px;
+	left: 105px;
+	width: 100%;
+	font-size: 24pt;
+	color : #708528; 
+}
+
+#blank {
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+	border-color: #FFFFFF;
+}
+
+#blogform label { font-weight:bold; }
+#blogform input#s { width: 40%; }
+#blogform input.submit { width: 16%; }
+
+#blogsearch {
+	position: absolute;
+	top: 110px;
+	right: 8%;
+	font-size: 10pt;
+}
+
+#bottom { 
+	float: bottom;
+	position: absolute;
+	bottom: 10px;
+}
+
+#button input.submit {
+	background: #111;
+	color: gray;
+	border-top: solid 1px #111;
+	border-bottom: solid 1px #111;
+	border-left: solid 1px #111;
+	border-right: solid 1px #111;
+	width: 15%;
+}
+
+#center {
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 18%;
+	width: 82%;
+	height: 100%;
+	overflow: auto;
+}
+#center_body {
+	position: relative;
+	width: 95%;
+	top: 130px;
+	bottom: 10px;
+	left: 10px;
+}
+
+#divider {
+	background: #111;
+	height: 1px;
+}
+
+#edit {
+	width: 600px;
+	font-size: 10pt;
+}
+
+/*forms*/
+input , textarea, select, option {
+	font-family :'Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+	font-size:100%;
+	padding: 2px;
+	background : #eee;
+}
+fieldset, legend {
+	background:transparent;
+	color : #111; 
+	border: none;
+	padding: 5px;
+}
+label, legend { font-weight:normal; }
+
+#header {
+	float: top;
+	position: absolute;
+	top: 24px;
+	left: 17%;
+	height: 100%;
+}
+
+#left {
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	width: 15%;
+	height: 100%;
+	list-style: none;
+	overflow: auto;
+}
+
+#list {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 130px;
+	width: 90%;
+	height: 100%;
+}
+
+#login {
+	text-align: right;
+	float: left;
+}
+#login input {
+	background: #EEEEEE;
+}
+
+#meta { font-size: 8pt; }
+
+#nav_body {
+	position: relative;
+	width: 90%;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+}
+#nav_body h1 a:hover {
+	background: #FF7FA8;
+	color: #000000;
+}
+
+#page_frames {
+	width: 100%;
+	float: left;
+	/* for ie */
+	margin: 0; 
+	overflow: auto;
+	/* end for ie */
+}
+
+#page_category {
+	position: relative;
+	text-align: center;
+}
+
+#page_list {
+	margin: 20px;
+	text-align: right;
+	font-size: 9pt;
+}
+
+#page_login {
+	position: relative;
+	text-align: right;
+	font-size: 8pt;
+}
+
+#page_upload { background: #111; color: #444; font-weight: bold }
+
+#post {
+	width: 600px;
+}
+
+#post_body {
+	position: relative;
+	width: 95%;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+}
+
+#post_date { font-size: 8pt; }
+
+#post_edit {
+	width: 100px;
+	text-align: center;
+}
+
+#post_meta {
+	margin-bottom: 4px;
+	margin-left: 2px;
+	color: #111;
+	font-size: 8pt;
+}
+
+#post_table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#post_tags { font-size: 8pt; }
+
+#post_thumb {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#post_title {
+	border: 1px;
+	line-height: 1.5em;
+}
+#post_title a { color: #708528; }
+#post_title a:hover { color: #111; }
+#post_title h2 { font-weight: 100; }
+
+#registration_body {
+	left: 10px;
+	text-align: left;
+}
+
+#right {
+	float: right;
+	position: absolute;
+	top: 150px;
+	right: 1%;
+	width: 33%;
+	height: 100%;
+	list-style: none;
+}
+
+#rss {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 8pt;
+}
+
+#search {
+	position: absolute;
+	top: 75px;
+	right: 10%;
+	font-size: 10pt;
+}
+
+#sidebar {
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 18%;
+	height: 100%;
+	list-style: none;
+	overflow: auto;
+}
+#sidebar h2 {
+	margin: 5px 0px 0px;
+	padding: 4px 0px;
+	font-size:100%;
+}
+#sidebar ul { margin: 2px; }
+
+#top {
+	float: top;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 10%;
+	width: 100%
+	overflow: auto;
+}
+
+#upload {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 30px;
+	width: 600px;
+}
+#upload_heading {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding: 10px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+#upload_input {
+	width: 95%;
+	padding: 2px;
+	border: 0px;
+	border-collapse: collapse;
+}
+#upload_label {
+	background: #000000;
+	color: #FF7FA8;
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 2px;
+	border: 2px;
+	border-style: solid;
+	border-color: #EFC5A4;
+	width: 100px;
+}
+#upload_meta {
+	font-size: 8pt;
+	color: #FF7FA8;
+}
+#upload_submit {
+	width: 15%;
+	background: #000000;
+	color: #FF7FA8;
+	font-size: 11pt;
+	padding: 2px;
+	border: 0px;
+	border-collapse: collapse;
+}
+#upload_table {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+#upload_tags {
+	width: 75%;
+}

@@ -1,0 +1,28 @@
+#!/bin/rc
+# delete posts $2 through $3
+rfork e
+low=()
+high=()
+fn usage {
+	echo usage: $argv0 '[ -r | -t n ]' >[1=2]
+	exit usage
+}
+switch($1){
+case -r
+	site=/usr/sl/www/werc/sites/read.stanleylieber.com
+case -t
+	site=/usr/sl/www/werc/sites/tumblr.stanleylieber.com
+case *
+	usage
+}
+low=`{ls -p $site/src | sort -n | sed 1q}
+high=$2
+for(i in `{seq $low $high})
+	rm -rf $site/src/$i
+{
+for(i in `{seq $low $high})
+	echo ',x/^'$i'\/.*\n/d'
+echo w
+echo w
+echo q
+} | sam -d $site/tags >[2]/dev/null
