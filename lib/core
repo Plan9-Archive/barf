@@ -170,7 +170,8 @@ fn edit_post{
 			img=$a_dir/img/^`{date -n}^.^`{echo $"a_img |
 				sed 's/^.*\.(gif|GIF)$/gif/g;
 					s/^.*\.(jpg|jpeg|JPG|JPEG)$/jpg/g;
-					s/^.*\.(png|PNG)$/png/g'
+					s/^.*\.(png|PNG)$/png/g;
+					s/^.*\.(tif|TIF|tiff|TIFF)$/tif/g'
 			}
 			thumb=$a_dir/img/small.^`{basename $img | sed 's/\..*$//g'}^.png
 			if(test -f /boot/factotum){
@@ -187,11 +188,11 @@ fn edit_post{
 					cmd=gif
 				case *.ico
 					cmd=ico
-				case *.jpg *.jpeg
+				case *.jpg
 					cmd=jpg
 				case *.png
 					cmd=png
-				case *.tif *.tiff
+				case *.tif
 					cmd=tif
 				case *.tga
 					cmd=tga
