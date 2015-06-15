@@ -187,10 +187,12 @@ fn edit_post{
 					cmd=gif
 				case *.ico
 					cmd=ico
-				case *.jpg
+				case *.jpg *.jpeg
 					cmd=jpg
 				case *.png
 					cmd=png
+				case *.tif *.tiff
+					cmd=tif
 				case *.tga
 					cmd=tga
 				}
